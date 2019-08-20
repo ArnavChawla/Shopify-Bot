@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+ <link rel="stylesheet" href="assets/css/pace.css"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+</head>
+<style>
+body {
+    background-color: #414A69;
+}
+</style>
+<script>
+function myFunction() {
+    document.getElementById("activation").submit();
+}
+</script>
+<body>
+
+  <div class="outer">
+    <div class="middle">
+      <div class="inner">
+        <div class="buttonHolder">
+        <img src="{{ url_for('static', filename='logo1.png') }}">
+        <!-- <h1>Activate Your Key</h1> -->
+      </div>
+      <form class="" id="activation" action="." method="POST">
+          <input placeholder="Enter Your Key" class="form-control form-control-rounded heading-font-family" type="text" name="key">
+          <div class="buttonHolder">
+            <input type="submit" value="Submit">
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+
+</body>

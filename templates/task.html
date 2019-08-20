@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///Users/arnavchawla/Desktop/Raw%20HtmL/blank%20good.htm -->
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Blank Page</title>
+    <!-- CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    <!-- Head Libs -->
+    <style type="text/css">
+    table.task {
+      font-family: "Lucida Console", Monaco, monospace;
+      border: 1px solid #A49264;
+      background-color: #1C1C1C;
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+    }
+    table.task td, table.task th {
+      border: 2px solid #997CAA;
+      padding: 3px 3px;
+    }
+    table.task tbody td {
+      font-size: 13px;
+      color: #FF0000;
+    }
+    table.task thead {
+      background: #1C1C1C;
+    }
+    table.task thead th {
+      font-weight: bold;
+      color: #FFFFFF;
+      text-align: center;
+    }
+    </style>
+</head>
+
+<body class="sidebar-horizontal pace-done"><div class="pace  pace-in"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+    <div id="wrapper" class="wrapper">
+        <!-- HEADER & TOP NAVIGATION -->
+
+    <!-- /.navbar -->
+    <div class="content-wrapper">
+        <!-- SIDEBAR -->
+        <aside class="site-sidebar clearfix">
+            <nav class="sidebar-nav">
+                <ul class="nav in side-menu">
+                    <li class="current-page menu-item-has-children"><a href="file:///Users/arnavchawla/Documents/package%202/html/horizontal-nav-icons/index.html"><i class="list-icon feather feather-command"></i> <span class="hide-menu">Profiles</span></a>
+                        <ul class="list-unstyled sub-menu">
+                            <li><a href="/creator">Profile Creator</a>
+                            </li>
+                            <li><a href="http://127.0.0.1:5000/Editor">Profile Editor</a>
+                            </li>
+
+
+
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon feather feather-briefcase"></i> <span class="hide-menu">Tasks<span class="badge bg-primary">6</span></span></a>
+                        <ul class="list-unstyled sub-menu">
+                            <li><a href="http://127.0.0.1:5000/task_create">Task Creator</a>
+                            </li>
+                            <li><a href="http://127.0.0.1:5000/task_manage">Task Manager</a>
+                            </li>
+
+
+
+
+                        </ul>
+                    </li>
+
+
+
+
+
+
+
+                </ul>
+                <!-- /.side-menu -->
+            </nav>
+            <!-- /.sidebar-nav -->
+        </aside>
+        <!-- /.site-sidebar -->
+        <main class="main-wrapper clearfix" style="min-height: 1000px;">
+    <table class="task">
+    <thead>
+    <tr>
+    <th>url</th>
+    <th>keywords</th>
+    <th>size</th>
+    <th>staus</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      {% for data in data %}
+          <td>{{data.siteUrl}}</td><td>{{data.taskKeys}}</td><td>{{data.size}}</td><td>{{data.status}}</td></tr>
+      {% endfor %}
+    </tbody>
+    </tr>
+    </table>
+    <form method="POST" action="/start_shopping">
+    <div class="buttonHolder">
+        <input class="btn btn-primary btn-rounded" value="Start Task" type="submit">
+
+    </div></form>
+  </body>

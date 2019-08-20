@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///Users/arnavchawla/Desktop/Raw%20HtmL/blank%20good.htm -->
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Blank Page</title>
+    <!-- CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    <!-- Head Libs -->
+</head>
+
+<body class="sidebar-horizontal pace-done"><div class="pace  pace-in"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+    <div id="wrapper" class="wrapper">
+        <!-- HEADER & TOP NAVIGATION -->
+
+    <!-- /.navbar -->
+    <div class="content-wrapper">
+        <!-- SIDEBAR -->
+        <aside class="site-sidebar clearfix">
+            <nav class="sidebar-nav">
+                <ul class="nav in side-menu">
+                    <li class="current-page menu-item-has-children"><a href="file:///Users/arnavchawla/Documents/package%202/html/horizontal-nav-icons/index.html"><i class="list-icon feather feather-command"></i> <span class="hide-menu">Profiles</span></a>
+                        <ul class="list-unstyled sub-menu">
+                            <li><a href="http://127.0.0.1:5000/creator">Profile Creator</a>
+                            </li>
+                            <li><a href="http://127.0.0.1:5000/Editor">Profile Editor</a>
+                            </li>
+
+
+
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon feather feather-briefcase"></i> <span class="hide-menu">Tasks<span class="badge bg-primary">6</span></span></a>
+                        <ul class="list-unstyled sub-menu">
+                            <li><a href="http://127.0.0.1:5000/task_create">Task Creator</a>
+                            </li>
+                            <li><a href="http://127.0.0.1:5000/task_manage">Task Manager</a>
+                            </li>
+
+
+
+
+                        </ul>
+                    </li>
+
+
+
+
+
+
+
+                </ul>
+                <!-- /.side-menu -->
+            </nav>
+            <!-- /.sidebar-nav -->
+        </aside>
+        <!-- /.site-sidebar -->
+        <main class="main-wrapper clearfix" style="min-height: 1000px;">
+            <!-- Page Title Area -->
+			<div class="col-md-111 widget-holder">
+            <div class="widget-bg">
+                <div class="widget-body clearfix">
+                    <form method="POST" action="/new_shopify">
+
+                        <h5 class="box-title mr-b-0">Task Billing</h5>
+
+                        <div class="row mr-b-50">
+
+
+
+
+                            <div class="col-md-9 mb-3">
+
+<label for="validationServer05">Profile</label>
+                                <select class="form-control" id="l13" data-fillr-id="110834" data-fillr="bound" name="profile" autocomplete="off">
+                                        {% for data in data %}
+                                            <option value={{data}}>{{data}}</option>
+                                        {% endfor %}
+                                        </select>
+
+
+
+                            </div>
+
+                        </div>
+
+                        <h5 class="box-title mr-b-0">Task Item</h5>
+                        <div class="row mr-b-50">
+
+                            <div class="col-md-6 mb-6">
+                                <label for="validationServer02">URL</label>
+                                <input class="form-control" name="url" id="validationServer02" required="" data-fillr-id="124770" data-fillr="bound" autocomplete="off" placeholder="url" type="text">
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationServer02">Keywords</label>
+                                <input class="form-control" name="keywords" id="validationServer02" required="" data-fillr-id="124770" data-fillr="bound" autocomplete="off" placeholder="keywords" type="text">
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationServer01">Size</label>
+
+                                <input class="form-control" name="size" id="validationServer02" required="" data-fillr-id="124770" data-fillr="bound" autocomplete="off" placeholder="ex(medium, random)" type="text">
+                            </div>
+
+                        </div>
+
+                        <div>
+                        </div>
+                        <div class="buttonHolder">
+                            <input class="btn btn-primary btn-rounded" value="Start Task" type="submit">
+
+                    </div></form>
+
+
+                </div>
+
+                <!-- /.widget-body -->
+
+            </div>
+
+            <!-- /.widget-bg -->
+        </div>
+            <!-- /.page-title -->
+            <!-- =================================== -->
+            <!-- Different data widgets ============ -->
+            <!-- =================================== -->
+            <div class="widget-list">
+                <div class="row">
+                    <div class="widget-holder col-md-12">
+
+                        <!-- /.widget-bg -->
+                    </div>
+                    <!-- /.widget-holder -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.widget-list -->
+        </main>
+        <!-- /.main-wrappper -->
+        <!-- RIGHT SIDEBAR -->
+        <aside class="right-sidebar scrollbar-enabled suppress-x ps ps--theme_default" data-ps-id="8f52dfe1-2da0-3567-e8ca-010c71e1c2f1">
+            <div class="sidebar-chat" data-plugin="chat-sidebar">
+                <div class="sidebar-chat-info">
+                    <h6 class="fs-16">Chat List</h6>
+                    <form class="mr-t-10">
+                        <div class="form-group">
+                            <input class="form-control form-control-rounded fs-13 heading-font-family pd-r-30" placeholder="Search for friends ..." type="search"> <i class="feather feather-search post-absolute pos-right vertical-center mr-3 text-muted"></i>
+                        </div>
+                    </form>
+                </div>
+                <div class="chat-list">
+                    <div class="list-group row">
+                        <a href="javascript:void(0)" class="list-group-item" data-chat-user="Julein Renvoye">
+                            <figure class="thumb-xs user--online mr-3 mr-0-rtl ml-3-rtl">
+                                <img src="Blank%20Page_files/user2.html" class="rounded-circle" alt="">
+                            </figure><span><span class="name">Gene Newman</span>  <span class="username">@gene_newman</span> </span>
+                        </a>
+                        <a href="javascript:void(0)" class="list-group-item" data-chat-user="Eddie Lebanovkiy">
+                            <figure class="thumb-xs user--online mr-3 mr-0-rtl ml-3-rtl">
+                                <img src="Blank%20Page_files/user3.html" class="rounded-circle" alt="">
+                            </figure><span><span class="name">Billy Black</span>  <span class="username">@billyblack</span> </span>
+                        </a>
+                        <a href="javascript:void(0)" class="list-group-item" data-chat-user="Cameron Moll">
+                            <figure class="thumb-xs user--online mr-3 mr-0-rtl ml-3-rtl">
+                                <img src="Blank%20Page_files/user5.html" class="rounded-circle" alt="">
+                            </figure><span><span class="name">Herbert Diaz</span>  <span class="username">@herbert</span> </span>
+                        </a>
+                        <a href="javascript:void(0)" class="list-group-item" data-chat-user="Bill S Kenny">
+                            <figure class="user--busy thumb-xs mr-3 mr-0-rtl ml-3-rtl">
+                                <img src="Blank%20Page_files/user4.html" class="rounded-circle" alt="">
+                            </figure><span><span class="name">Sylvia Harvey</span>  <span class="username">@sylvia</span> </span>
+                        </a>
+                        <a href="javascript:void(0)" class="list-group-item" data-chat-user="Trent Walton">
+                            <figure class="user--busy thumb-xs mr-3 mr-0-rtl ml-3-rtl">
+                                <img src="Blank%20Page_files/user6.html" class="rounded-circle" alt="">
+                            </figure><span><span class="name">Marsha Hoffman</span>  <span class="username">@m_hoffman</span> </span>
+                        </a>
+                        <a href="javascript:void(0)" class="list-group-item" data-chat-user="Julien Renvoye">
+                            <figure class="user--offline thumb-xs mr-3 mr-0-rtl ml-3-rtl">
+                                <img src="Blank%20Page_files/user7.html" class="rounded-circle" alt="">
+                            </figure><span><span class="name">Mason Grant</span>  <span class="username">@masongrant</span> </span>
+                        </a>
+                        <a href="javascript:void(0)" class="list-group-item" data-chat-user="Eddie Lebaovskiy">
+                            <figure class="user--offline thumb-xs mr-3 mr-0-rtl ml-3-rtl">
+                                <img src="Blank%20Page_files/user8.html" class="rounded-circle" alt="">
+                            </figure><span><span class="name">Shelly Sullivan</span>  <span class="username">@shelly</span></span>
+                        </a>
+                    </div>
+                    <!-- /.list-group -->
+                </div>
+                <!-- /.chat-list -->
+            </div>
+            <!-- /.sidebar-chat -->
+        <div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div><div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></aside>
+        <!-- CHAT PANEL -->
+        <div class="chat-panel" hidden="">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between"><a href="javascript:void(0);"><i class="feather feather-message-square text-success"></i></a>  <span class="user-name heading-font-family fw-400">John Doe</span>
+                    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <div class="widget-chat-activity flex-1">
+                        <div class="messages scrollbar-enabled suppress-x ps ps--theme_default" data-ps-id="96214237-3c7f-24a1-c191-751ce340c4e5">
+                            <div class="message media reply">
+                                <figure class="thumb-xs2 user--online">
+                                    <a href="file:///Users/arnavchawla/Documents/package%202/html/horizontal-nav-icons/page-blank.html#">
+                                        <img src="Blank%20Page_files/user3.html" class="rounded-circle" alt="">
+                                    </a>
+                                </figure>
+                                <div class="message-body media-body">
+                                    <p>Epic Cheeseburgers come in all kind of styles.</p>
+                                </div>
+                                <!-- /.message-body -->
+                            </div>
+                            <!-- /.message -->
+                            <div class="message media">
+                                <figure class="thumb-xs2 user--online">
+                                    <a href="file:///Users/arnavchawla/Documents/package%202/html/horizontal-nav-icons/page-blank.html#">
+                                        <img src="Blank%20Page_files/user1.html" class="rounded-circle" alt="">
+                                    </a>
+                                </figure>
+                                <div class="message-body media-body">
+                                    <p>Cheeseburgers make your knees weak.</p>
+                                </div>
+                                <!-- /.message-body -->
+                            </div>
+                            <!-- /.message -->
+                            <div class="message media reply">
+                                <figure class="thumb-xs2 user--offline">
+                                    <a href="file:///Users/arnavchawla/Documents/package%202/html/horizontal-nav-icons/page-blank.html#">
+                                        <img src="Blank%20Page_files/user5.html" class="rounded-circle" alt="">
+                                    </a>
+                                </figure>
+                                <div class="message-body media-body">
+                                    <p>Cheeseburgers will never let you down.</p>
+                                    <p>They'll also never run around or desert you.</p>
+                                </div>
+                                <!-- /.message-body -->
+                            </div>
+                            <!-- /.message -->
+                            <div class="message media">
+                                <figure class="thumb-xs2 user--online">
+                                    <a href="file:///Users/arnavchawla/Documents/package%202/html/horizontal-nav-icons/page-blank.html#">
+                                        <img src="Blank%20Page_files/user1.html" class="rounded-circle" alt="">
+                                    </a>
+                                </figure>
+                                <div class="message-body media-body">
+                                    <p>A great cheeseburger is a gastronomical event.</p>
+                                </div>
+                                <!-- /.message-body -->
+                            </div>
+                            <!-- /.message -->
+                            <div class="message media reply">
+                                <figure class="thumb-xs2 user--busy">
+                                    <a href="file:///Users/arnavchawla/Documents/package%202/html/horizontal-nav-icons/page-blank.html#">
+                                        <img src="Blank%20Page_files/user6.html" class="rounded-circle" alt="">
+                                    </a>
+                                </figure>
+                                <div class="message-body media-body">
+                                    <p>There's a cheesy incarnation waiting for you no matter what you palete preferences are.</p>
+                                </div>
+                                <!-- /.message-body -->
+                            </div>
+                            <!-- /.message -->
+                            <div class="message media">
+                                <figure class="thumb-xs2 user--online">
+                                    <a href="file:///Users/arnavchawla/Documents/package%202/html/horizontal-nav-icons/page-blank.html#">
+                                        <img src="Blank%20Page_files/user1.html" class="rounded-circle" alt="">
+                                    </a>
+                                </figure>
+                                <div class="message-body media-body">
+                                    <p>If you are a vegan, we are sorry for you loss.</p>
+                                </div>
+                                <!-- /.message-body -->
+                            </div>
+                            <!-- /.message -->
+                        <div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div><div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+                        <!-- /.messages -->
+                    </div>
+                    <!-- /.widget-chat-acitvity -->
+                </div>
+                <!-- /.card-body -->
+                <form action="javascript:void(0)" class="card-footer" method="post">
+                    <div class="d-flex justify-content-end"><i class="feather feather-plus-circle list-icon my-1 mr-3"></i>
+                        <textarea class="border-0 flex-1" rows="1" style="resize: none" placeholder="Type your message here"></textarea>
+                        <button class="btn btn-sm btn-circle bg-transparent" type="submit"><i class="feather feather-arrow-right list-icon fs-26 text-success"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.chat-panel -->
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- FOOTER -->
+
+    </div>
+    <!--/ #wrapper -->
+    <!-- Scripts -->
+
+
+
+</body></html>

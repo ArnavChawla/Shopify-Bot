@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Wrath Supreme</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="main.css" />
+
+</head>
+
+<body>
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Contact -->
+		<section id="contact">
+			<div class="inner">
+				<section>
+					<form>
+						<div class="field third first">
+							<label for="Wrath Supreme">Wrath Supreme Alpha</label>
+						</div>
+						<div class="field third">
+							<button type="button" id="createTasks" onclick="openTab(event, 'tasks')">Create Tasks</button>
+						</div>
+						<div class="field third">
+							<button type="button" id="createProfile" onclick="openTab(event, 'profiles')">Create Profiles</button>
+						</div>
+						<div id="profiles" class="tabcontent">
+							<div class="field quarter first">
+								<label for="name">Profile Name</label>
+								<input type="text" name="name" id="profileName" placeholder="Profile Name" />
+							</div>
+							<div class="field quarter first">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field quarter">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field quarter">
+								<label for="name">phone</label>
+								<input type="text" name="phone" id="phone" placeholder="Phone #" />
+							</div>
+							<div class="field third first">
+								<label for="name">Address</label>
+								<input type="text" name="address" id="address" placeholder="Address" />
+							</div>
+							<div class="field third">
+								<label for="name">Apt, Suite</label>
+								<input type="text" name="address2" id="address2" placeholder="Apt, Suite" />
+							</div>
+							<div class="field third">
+								<label for="name">City</label>
+								<input type="text" name="city" id="city" placeholder="City" />
+							</div>
+							<div class="field third first">
+								<label for="name">State</label>
+								<input type="text" name="state" id="state" placeholder="State" />
+							</div>
+							<div class="field third">
+								<label for="name">Country</label>
+								<select name="date" data-fillr-id="73485" data-fillr="bound" autocomplete="off">
+            <option data-code="Aa" value="http://www.turbobase.com/talk/meetings/view?meetingId=74032">USA</option>
+            <option data-code="Aa" value="http://www.turbobase.com/talk/meetings/view?meetingId=74033">Canada</option>
+            <option data-code="Aa" value="http://www.turbobase.com/talk/meetings/view?meetingId=74034">Europe</option>
+
+
+        					</select>
+								<!--
+								<input type="text" name="country" id="country" placeholder="Country" /> -->
+							</div>
+							<div class="field third">
+								<label for="name">Zip Code</label>
+								<input type="text" name="zip" id="zip" placeholder="Zip Code" />
+							</div>
+							<div class="field quarter first">
+								<label for="name">Credit Card Number</label>
+								<input type="text" name="cc_number" id="cc_number" placeholder="Credit Card Number" />
+							</div>
+							<div class="field quarter">
+								<label for="name">Month</label>
+								<input type="text" name="cc_month" id="cc_month" placeholder="Month" />
+							</div>
+							<div class="field quarter">
+								<label for="name">Year</label>
+								<input type="text" name="cc_year" id="cc_year" placeholder="Year" />
+							</div>
+							<div class="field quarter">
+								<label for="name">CVV</label>
+								<input type="text" name="cc_cvv" id="cc_cvv" placeholder="CVV" />
+							</div>
+							<ul class="actions">
+								<div class="field quarter first">
+									<button type="button" id="saveProfile">Save Profile</button>
+								</div>
+								<div class="field quarter">
+									<button type="button" id="loadProfile">Load Profile</button>
+								</div>
+								<div class="field quarter">
+									<button type="button" id="deleteProfile">Delete Profile</button>
+								</div>
+								<div class="field quarter">
+									<div class="select-wrapper">
+										<select name="text" id="profileList">
+										</select>
+									</div>
+								</div>
+
+							</ul>
+						</div>
+						<div id="tasks" class="tabcontent">
+							<div class="field third first">
+								<label for="name">Checkout Delay</label>
+								<input type="text" name="delay" id="delay" placeholder="Delay(in MS)" />
+							</div>
+							<div class="field third">
+								<label for="name">Auto checkout</label>
+								<input type="text" name="autocheckout" id="autocheckout" placeholder="True or False" />
+							</div>
+							<div class="field third">
+								<label for="name">Size</label>
+								<input type="text" name="size" id="size" placeholder="Size (ex Medium)" />
+							</div>
+							<div class="field quarter first">
+								<label for="name">Keywords</label>
+								<input type="text" name="keywords" id="keywords" placeholder="Keywords" />
+							</div>
+							<div class="field quarter first">
+								<label for="name">Color</label>
+								<input type="text" name="color" id="color" placeholder="Color (ex Red)" />
+							</div>
+							<div class="field quarter">
+								<label for="name">Refresh Delay</label>
+								<input type="text" name="autoRefreshDelay" id="autoRefreshDelay" placeholder="Delay(in MS)" />
+							</div>
+							<div class="field quarter">
+								<label for="name">Category</label>
+								<input type="text" name="category" id="category" placeholder="Category" />
+							</div>
+							<div class="field twothird first">
+									<label for="name">Webhook Url</label>
+									<input type="text" name="webhookUrl" id="webhookUrl" placeholder="Webhook Url" />
+							</div>
+							<div class="field third">
+								<label for="name">Schedule</label>
+								<input type="text" name="schedule" id="schedule" placeholder="HH:MM:SS" />
+							</div>
+							<ul class="actions">
+								<div class="field quarter first">
+									<button type="button" id="startTask">Start Task</button>
+								</div>
+								<div class="field quarter">
+									<button type="button" id="gmail">Gmail Signin</button>
+								</div>
+								<div class="field quarter">
+									<button type="button" id="saveSetting">Save Settings</button>
+								</div>
+								<div class="field quarter">
+									<div class="select-wrapper">
+										<select name="text" id="profilesList">
+										</select>
+									</div>
+								</div>
+							</ul>
+						</div>
+					</form>
+					<button id="x" class="x">
+						X
+					</button>
+					<script>
+						function openTab(evt, tabName) {
+							// Declare all variables
+							var i, tabcontent, tablinks;
+
+							// Get all elements with class="tabcontent" and hide them
+							tabcontent = document.getElementsByClassName("tabcontent");
+							for (i = 0; i < tabcontent.length; i++) {
+								tabcontent[i].style.display = "none";
+							}
+
+							// Get all elements with class="tablinks" and remove the class "active"
+							tablinks = document.getElementsByClassName("tablinks");
+							for (i = 0; i < tablinks.length; i++) {
+								tablinks[i].className = tablinks[i].className.replace(" active", "");
+							}
+
+							// Show the current tab, and add an "active" class to the button that opened the tab
+							document.getElementById(tabName).style.display = "block";
+							evt.currentTarget.className += " active";
+						}
+						document.getElementById('createProfile').click();
+						require('./app.js')
+					</script>
+					<script>
+						require('./profileManager.js')
+					</script>
+</body>
+
+</html>
