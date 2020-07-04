@@ -58,12 +58,12 @@ class shopifytask():
         }
         r = requests.post(link, json=payload, verify=False)
         self.payment_token = json.loads(r.text)["id"]
-    def get_products(self):
+    def getProducts(self):
         r = self.session.get(self.siteUrl+"/products.json")
         jso = json.loads(r.text)
         jso = jso["products"]
         return jso
-    def keyword_search(self,products):
+    def keywordSearch(self,products):
         for product in products:
             count = 0
             title = product["title"]
@@ -75,7 +75,7 @@ class shopifytask():
                 self.taskKeys=title
                 return product
 
-    def find_size(self,product):
+    def findSize(self,product):
         for variant in product["variants"]:
             if(variant["requires_shipping"] == False):
                 self.shipping = False
@@ -94,7 +94,7 @@ class shopifytask():
                 #print(variant)
                 print("Shipping = " + str(self.shipping))
                 return variant
-    def add_to_cart(self,productID):
+    def atc(self,productID):
         r = self.session.get(self.siteUrl+"/cart/add.js?id="+str(productID))
         r = self.session.get(self.siteUrl+"/checkout")
         self.checkoutUrl = r.url
@@ -183,7 +183,7 @@ class shopifytask():
     def run(self):
         self.status= "running"
         self.preloadPayment()
-        self.add_to_cart(self.find_size(self.keyword_search(self.get_products())))
+        self.atc(self.find_size(self.keywordSearch(self.getProducts())))
         first = Thread(target=self.first_page)
         second = Thread(target=self.get_shipping)
         third = Thread(target=self.checkout_gateway)
