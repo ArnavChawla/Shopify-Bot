@@ -21,12 +21,12 @@ class shopifytask():
         for word in a:
             self.keywords.append(word)
         print(self.keywords)
-        self.random_size = False
+        self.random = False
         self.shipping = True
         if(size != "random"):
             self.size = size
         else:
-            self.random_size = True
+            self.random = True
             self.size = "random"
         self.session=requests.session()
     def loadprofile(self,profilename):
@@ -79,7 +79,7 @@ class shopifytask():
         for variant in product["variants"]:
             if(variant["requires_shipping"] == False):
                 self.shipping = False
-            if(self.random_size):
+            if(self.random):
                 variants = []
                 for variant in product["variants"]:
                     print(variant)
